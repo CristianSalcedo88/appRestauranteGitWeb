@@ -7,5 +7,6 @@ namespace appRestauranteGitWeb.datos
 {
     public class clUsuarioD
     {
+
     }
 }
