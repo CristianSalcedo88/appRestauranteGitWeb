@@ -11,7 +11,7 @@ namespace appRestauranteGitWeb.datos
         public int mtdRegistrarUsuario(clUsuarioE objDatosU)
         {
             string sql = "insert into usuario(nombre,apellido,documento) values('"+objDatosU.nombre+ "'" +
-                ",'" + objDatosU.apellido + "','" + objDatosU.documento + "',)";
+                ",'" + objDatosU.apellido + "','" + objDatosU.documento + "')";
             clConexion objConexion = new clConexion();
             int resultado = objConexion.mtdConectado(sql);
             return resultado;
