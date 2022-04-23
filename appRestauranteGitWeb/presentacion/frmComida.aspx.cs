@@ -1,4 +1,5 @@
-﻿using System;
+﻿using appRestauranteGitWeb.logica;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,13 @@ namespace appRestauranteGitWeb
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnListar_Click(object sender, EventArgs e)
+        {
+            clComidaL objcomidaL = new clComidaL();
+            dgvComida.DataSource = objcomidaL.mtdListarComidaL();
+            dgvComida.DataBind();
         }
     }
 }

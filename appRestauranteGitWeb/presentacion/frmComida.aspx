@@ -12,15 +12,6 @@
         <ContentTemplate>
             <asp:Label ID="Label1" runat="server" Text="PEDIDOS RESTAURANTE"></asp:Label>
 
-            <asp:GridView ID="dgvComida" runat="server" AutoGenerateColumns="False" DataKeyNames="idComida" DataSourceID="SqlDataSource1">
-                <Columns>
-                    <asp:BoundField DataField="idComida" HeaderText="idComida" InsertVisible="False" ReadOnly="True" SortExpression="idComida" />
-                    <asp:BoundField DataField="nombreComida" HeaderText="nombreComida" SortExpression="nombreComida" />
-                    <asp:BoundField DataField="precio" HeaderText="precio" SortExpression="precio" />
-                </Columns>
-            </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbGitRetauranteConnectionString2 %>" SelectCommand="SELECT * FROM [comida]"></asp:SqlDataSource>
-
             <br />
             <br />
             <br />
@@ -28,7 +19,7 @@
 
           
 
-            <asp:Button ID="btnListar" runat="server" Text="Listar" />
+            <asp:Button ID="btnListar" runat="server" Text="Listar" OnClick="btnListar_Click" />
            
 
             <div class="mb-3 mt-3">
