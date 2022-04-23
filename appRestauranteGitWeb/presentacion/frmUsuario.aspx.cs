@@ -27,11 +27,11 @@ namespace appRestauranteGitWeb
             int filas = objUsuarioL.mtdRegistrarUsuario(objDatosU);
             if (filas > 0)
             {
-                lblrespuesta.Text = "Datos insertados Correctamente";
+                lblRespuesta.Text = "Datos insertados Correctamente";
             }
             else
             {
-                lblrespuesta.Text = "Error al insertar Datos";
+                lblRespuesta.Text = "Error al insertar Datos";
             }
         }
     }
