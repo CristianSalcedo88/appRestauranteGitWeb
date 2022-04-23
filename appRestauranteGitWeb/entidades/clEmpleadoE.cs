@@ -6,6 +6,7 @@ using System.Web;
 namespace appRestauranteGitWeb.entidades
 {
     public class clEmpleadoE
-    {
+    {        
+
     }
 }
