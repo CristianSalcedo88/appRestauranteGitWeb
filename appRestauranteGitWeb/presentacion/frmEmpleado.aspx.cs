@@ -1,4 +1,6 @@
-﻿using System;
+﻿using appRestauranteGitWeb.entidades;
+using appRestauranteGitWeb.logica;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +14,20 @@ namespace appRestauranteGitWeb
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+       
+        
+
+        protected void btnregistrar_Click(object sender, EventArgs e)
+        {
+            clEmpleadoE ObjEmpleadoE = new clEmpleadoE();
+            clEmpleadoL ObjEmpleadoL = new clEmpleadoL();
+
+            ObjEmpleadoE.nombreEmpleado = txtnombre.Text +" "+ txtapellido.Text;
+            ObjEmpleadoE.tipoEmpleado = txttipoEmpleado.Text;
+
+           int filas= ObjEmpleadoL.mtdRegistrarEmpleado(ObjEmpleadoE);
         }
     }
 }
