@@ -7,5 +7,9 @@ namespace appRestauranteGitWeb.entidades
 {
     public class clEmpleadoE
     {
+        public int idEmpleado { get; set; }
+        public String nombreEmpleado { get; set; }
+        public String tipoEmpleado { get; set; }
+        public String apellido { get; set; }
     }
 }
