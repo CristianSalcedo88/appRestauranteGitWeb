@@ -4,6 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
     <div _designerregion="0">
+    
+    <div _designerregion="0">
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="idUsuario" DataSourceID="SqlDataSource1" EmptyDataText="No hay registros de datos para mostrar." GridLines="Vertical" Height="178px" Width="497px">
             <AlternatingRowStyle BackColor="#DCDCDC" />
             <Columns>
@@ -37,6 +39,8 @@
                 <asp:Parameter Name="idUsuario" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
+    </div>
+    
     </div>
     
 </asp:Content>
