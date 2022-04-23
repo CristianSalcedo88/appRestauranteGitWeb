@@ -28,6 +28,16 @@ namespace appRestauranteGitWeb
             ObjEmpleadoE.tipoEmpleado = txttipoEmpleado.Text;
 
            int filas= ObjEmpleadoL.mtdRegistrarEmpleado(ObjEmpleadoE);
+            string alerta = "datos insertados correctamente";
+
+            if(filas>0)
+            {
+                Label1.Text = "Datos insertados correctamente";
+            }
+            else
+            {
+                Label1.Text = "Error al insertar datos";
+            }
         }
     }
 }

@@ -13,4 +13,6 @@
      <asp:Label ID="tipo" runat="server" Text="tipo"></asp:Label><br />
 <asp:TextBox ID="txttipoEmpleado" runat="server"></asp:TextBox><br />
     <asp:Button ID="btnregistrar" runat="server" Text="registrar" OnClick="btnregistrar_Click" />
+    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+   
 </asp:Content>
