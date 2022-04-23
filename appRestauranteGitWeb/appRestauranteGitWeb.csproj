@@ -70,6 +70,7 @@
     <Content Include="presentacion\frmComida.aspx" />
     <Content Include="presentacion\frmEmpleado.aspx" />
     <Content Include="presentacion\frmUsuario.aspx" />
+    <Content Include="presentacion\frmHome.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +105,13 @@
     <Compile Include="logica\clComidaL.cs" />
     <Compile Include="logica\clEmpleadoL.cs" />
     <Compile Include="logica\clUsuarioL.cs" />
+    <Compile Include="presentacion\frmHome.aspx.cs">
+      <DependentUpon>frmHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentacion\frmHome.aspx.designer.cs">
+      <DependentUpon>frmHome.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
