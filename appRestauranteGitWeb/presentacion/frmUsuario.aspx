@@ -17,5 +17,7 @@
     <asp:Button ID="btnListar" runat="server" Text="Listar" />
     <br />
     <asp:GridView ID="dgvMostrarUsuarios" runat="server"></asp:GridView>
+    <br />
+    <asp:Label ID="lblRespuesta" runat="server" Text=""></asp:Label>
 
 </asp:Content>
